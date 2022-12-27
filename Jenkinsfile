@@ -28,6 +28,7 @@ pipeline{
         stage(deploy){
             steps{
                 script{
+                    sh 'chmod +x ./cert
 
                     if (CLUSTER == 'PROMETHEUS')
                     {

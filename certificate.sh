@@ -9,6 +9,7 @@ days_remain=`expr $diff / 86400`
 if [ $diff -lt 1296000 ]; then
    echo "certificate dew for renewal in $days_remain"
    echo "Need to renew certificate"
+   exit 1
 else
    echo "certification is valid"
    echo "certificate remaining days= $days_remain"
